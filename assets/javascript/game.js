@@ -36,7 +36,6 @@ $(document).ready(function () {
         purplegem = Math.floor(Math.random() * 12) + 1;
         greengem = Math.floor(Math.random() * 12) + 1;
         bluegem = Math.floor(Math.random() * 12) + 1;
-        console.log(redgem, bluegem, greengem, purplegem);
         $('#targetnumber').text(targetnumber);
         $('#userscore').text(userscore);
     };
@@ -46,7 +45,7 @@ $(document).ready(function () {
         $("#lose_msg").hide();
         $("#win_msg").show();
         $('#wins').text(wins);
-        console.log("wins are:" + wins);
+
         resetGame();
     };
     //function if user loses
@@ -55,7 +54,6 @@ $(document).ready(function () {
         $("#win_msg").hide();
         $("#lose_msg").show();
         $("#loses").text(loses);
-        console.log("loses are:" + loses);
         resetGame();
     };
 
@@ -63,7 +61,6 @@ $(document).ready(function () {
     // -----------------RED GEM -----------------------------------
     $('#redgem').on('click', function () {
         userscore = userscore + redgem;
-        console.log("New userscore= " + userscore);
         $("#userscore").text(userscore);
         if (targetnumber < userscore) {
             nay();
@@ -76,7 +73,6 @@ $(document).ready(function () {
     // -----------------PURPLE GEM -----------------------------------
     $('#purplegem').on('click', function () {
         userscore = userscore + purplegem;
-        console.log("New userscore= " + userscore);
         $("#userscore").text(userscore);
         if (targetnumber < userscore) {
             nay();
@@ -89,7 +85,6 @@ $(document).ready(function () {
     // -----------------GREEN GEM -----------------------------------
     $('#greengem').on('click', function () {
         userscore = userscore + greengem;
-        console.log("New userscore= " + userscore);
         $("#userscore").text(userscore);
         if (targetnumber < userscore) {
             nay();
@@ -103,7 +98,6 @@ $(document).ready(function () {
     // -----------------BLUE GEM -----------------------------------
     $('#bluegem').on('click', function () {
         userscore = userscore + bluegem;
-        console.log("New userscore= " + userscore);
         $("#userscore").text(userscore);
         if (targetnumber < userscore) {
             nay();
