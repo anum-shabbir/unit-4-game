@@ -1,0 +1,24 @@
+1. blocks for display:
+   a. heading
+   b. instructions block
+   c. target number
+   d. stats block (win/loss)
+   e. Crystal images (4)
+   f. total score block
+   g. user score block 
+
+
+2. Functionality:
+Crystal images are buttons
+start of the game:
+a. generate a random number 
+b. crystal images are clickable and have specific number associated with it (but not displayed)
+c. user score = 0
+d. stats for wins and loses are set to 0
+
+Game:
+a. when user presses crystal image, user score is added with crystal image value
+b. win: if target score = user score and win count ++
+c. lose: if target score is less than user score and lose count ++ 
+
+

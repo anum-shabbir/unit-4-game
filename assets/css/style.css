@@ -1,0 +1,96 @@
+body {
+    background-color:black;
+    padding-top: 20px;
+    font-family: Courier New, Courier, monospace;
+    background: url('../images/background.jpg'), no-repeat ;
+    position: relative;
+}
+
+header{
+
+	float:left;
+	background: #c97123;
+	border-bottom:#ccc;
+    padding:20px;
+    margin: 10px;
+}
+
+h1, h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+section{
+
+    position: absolute;
+    float:left;
+    background: #fbe6cd;
+    width: 50%;
+    margin: 90px 10px;
+    color: #879963;
+}
+
+p{
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-top: 20px;
+    padding: 10px;
+
+}
+
+#targetnumber{
+    position: absolute;
+    float:left;
+    background-color: #3a8f5c;
+    color: black;
+    margin: 500px 10px;
+    width: 15%;
+    height: 150px;
+}
+.stats{
+
+    float:left;
+    background-color: #3dc6cf;
+    color: black;
+    margin: 500px -125px;
+    width: 15%;
+    height: 150px;
+}
+#crystalimages{
+    position: absolute;
+    float:left;
+    color: black;
+    margin: 650px 10px;
+    padding: 10px;
+
+}
+#scoretext{
+    position: absolute;
+    float:left;
+    background-color: #2ca194;
+    color: white;
+    margin: 800px 10px;
+    width: 25%;
+}
+#userscore{
+    position: absolute;
+    float:left;
+    background-color: #2ca194;
+    color: white;
+    margin: 850px 10px;
+    width: 25%;
+    height: 150px;
+
+}
