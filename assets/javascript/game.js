@@ -8,64 +8,63 @@ $(document).ready(function () {
     var purplegem;
     var bluegem;
 
-//built-in Javascript function for target number between 19 and 120
+    //Javascript function for target number between 19 and 120
     function getTargetNum(min, max) {
-        return Math.floor(Math.random() * (max - min) ) + min;
+        return Math.floor(Math.random() * (max - min)) + min;
     }
 
-    targetnumber = getTargetNum(19,120);
-    $('#targetnumber').text(targetnumber); 
-    $('#userscore').text(userscore); 
+    targetnumber = getTargetNum(19, 120);
+    $('#targetnumber').text(targetnumber);
+    $('#userscore').text(userscore);
     redgem = Math.floor(Math.random() * 12) + 1; //for number between 1 to 12
     purplegem = Math.floor(Math.random() * 12) + 1;
     greengem = Math.floor(Math.random() * 12) + 1;
     bluegem = Math.floor(Math.random() * 12) + 1;
-    console.log(redgem, bluegem, greengem, purplegem);
-    $("#win_msg").hide(); 
-    $("#lose_msg").hide(); 
+    $("#win_msg").hide();
+    $("#lose_msg").hide();
 
-//built-in Javascript function for target number between 19 and 120
-function getTargetNum(min, max) {
-    return Math.floor(Math.random() * (max - min) ) + min;
-}
+    //built-in Javascript function for target number between 19 and 120
+    function getTargetNum(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
 
-//To keep up the score instead of refreshing the game
+    //To keep up the score instead of refreshing the game
     function resetGame() {
         userscore = 0;
-        targetnumber = getTargetNum(19,120);
+        targetnumber = getTargetNum(19, 120);
         redgem = Math.floor(Math.random() * 12) + 1;
         purplegem = Math.floor(Math.random() * 12) + 1;
         greengem = Math.floor(Math.random() * 12) + 1;
         bluegem = Math.floor(Math.random() * 12) + 1;
         console.log(redgem, bluegem, greengem, purplegem);
-        $('#targetnumber').text(targetnumber); 
-        $('#userscore').text(userscore); 
+        $('#targetnumber').text(targetnumber);
+        $('#userscore').text(userscore);
     };
-//function if user wins
+    //function if user wins
     function yay() {
         wins++
-        $("#lose_msg").hide();    
-        $("#win_msg").show();   
-        $('#wins').text(wins); 
+        $("#lose_msg").hide();
+        $("#win_msg").show();
+        $('#wins').text(wins);
         console.log("wins are:" + wins);
         resetGame();
     };
-//function if user loses
+    //function if user loses
     function nay() {
         loses++;
-        $("#win_msg").hide();  
-        $("#lose_msg").show(); 
-        $("#loses").text(loses); 
+        $("#win_msg").hide();
+        $("#lose_msg").show();
+        $("#loses").text(loses);
         console.log("loses are:" + loses);
         resetGame();
     };
 
-// Converting crystal images to buttons 
+    // Converting crystal images to buttons 
     // -----------------RED GEM -----------------------------------
     $('#redgem').on('click', function () {
         userscore = userscore + redgem;
         console.log("New userscore= " + userscore);
-        $("#userscore").text(userscore);  
+        $("#userscore").text(userscore);
         if (targetnumber < userscore) {
             nay();
         }

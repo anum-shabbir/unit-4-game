@@ -2,7 +2,8 @@ body {
     background-color:black;
     padding-top: 20px;
     font-family: Courier New, Courier, monospace;
-    background: url('../images/background.jpg'), no-repeat ;
+    background: url('../images/backgroundimage.jpg'), no-repeat ;
+    background-size: cover;
     position: relative;
 }
 
@@ -49,7 +50,6 @@ p{
 }
 
 #targetnumber{
-
     background-color: #3a8f5c;
     color: black;
     margin-top: 15px;
@@ -58,7 +58,7 @@ p{
     height: 150px;
 }
 .stats{
-float: left;
+    float: left;
     background-color: #3dc6cf;
     color: black;
     margin-top: -150px;
@@ -87,6 +87,26 @@ float: left;
     margin-left: 10px;
     width: 25%;
     height: 150px;
-    margin-bottom: 20px; 
+    margin-bottom: 70px; 
 
+}
+
+footer {
+	padding:10px;
+    text-align: center;
+	background:#666;
+	color:#fff;
+	position: fixed;
+	left: 0;
+	bottom: 0px;
+    width: 100%;
+    border-top: 5px solid #3dc6cf;
+}
+
+a{
+    color: white;
+}
+/* mouse over link */
+a:hover {
+    color: #f7de62;
 }
